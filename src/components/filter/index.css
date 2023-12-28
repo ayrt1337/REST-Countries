@@ -1,0 +1,11 @@
+.input-text:focus{
+    outline: none;
+}
+
+.select{
+    outline: none;
+}
+
+option[value=''][disabled]{
+    display: none;
+}
