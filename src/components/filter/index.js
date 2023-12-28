@@ -10,7 +10,7 @@ const Filter = props => {
 
     function handleChange(){
         const text = document.getElementById('input').value
-        props.setText(text)
+        props.setText(text.toLowerCase())
     }
 
     return(
