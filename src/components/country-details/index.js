@@ -36,7 +36,19 @@ const ShowDetails = props => {
 
                                                 <P textColor={props.textColor}>Sub Region: <Span textColor={props.textColor}>{country.subregion}</Span></P>
 
-                                                <P textColor={props.textColor}>Capital: <Span textColor={props.textColor}>{country.capital}</Span></P>
+                                                <P textColor={props.textColor}>Capital: 
+                                                    <Span textColor={props.textColor}>
+                                                        {
+                                                            country.capital.map((element, index) => {
+                                                                console.log(element)
+                                                                if(index === country.capital.length - 1){
+                                                                    return ` ${element}`
+                                                                }
+                                                                return ` ${element},`
+                                                            })
+                                                        }
+                                                    </Span>
+                                                </P>
                                             </DivDetails>
 
                                             <div>
@@ -90,7 +102,19 @@ const ShowDetails = props => {
 
                                                     <P textColor={props.textColor}>Sub Region: <Span textColor={props.textColor}>{country.subregion}</Span></P>
 
-                                                    <P textColor={props.textColor}>Capital: <Span textColor={props.textColor}>{country.capital}</Span></P>
+                                                    <P textColor={props.textColor}>Capital: 
+                                                        <Span textColor={props.textColor}>
+                                                            {
+                                                                country.capital.map((element, index) => {
+                                                                    console.log(element)
+                                                                    if(index === country.capital.length - 1){
+                                                                        return ` ${element}`
+                                                                    }
+                                                                    return ` ${element},`
+                                                                })
+                                                            }
+                                                        </Span>
+                                                    </P>
                                                 </DivDetails>
 
                                                 <div>
@@ -123,7 +147,19 @@ const ShowDetails = props => {
 
                                                     <P textColor={props.textColor}>Sub Region: <Span textColor={props.textColor}>{country.subregion}</Span></P>
 
-                                                    <P textColor={props.textColor}>Capital: <Span textColor={props.textColor}>{country.capital}</Span></P>
+                                                    <P textColor={props.textColor}>Capital: 
+                                                        <Span textColor={props.textColor}>
+                                                            {
+                                                                country.capital.map((element, index) => {
+                                                                    console.log(element)
+                                                                    if(index === country.capital.length - 1){
+                                                                        return ` ${element}`
+                                                                    }
+                                                                    return ` ${element},`
+                                                                })
+                                                            }
+                                                        </Span>
+                                                    </P>
                                                 </DivDetailsFor650Width>
 
                                                 <DivDetailsFor650Width>

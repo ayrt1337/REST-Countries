@@ -28,6 +28,10 @@ const GlobalStyle = createGlobalStyle`
     body{
       background-color: ${props => props.color === 'white' ? '#f1f1f1' : 'rgba(33,46,55,255)'}
     }
+
+    input::placeholder{
+      color: ${props => props.color === 'white' ? '' : 'white'}
+    }
   `
 
 export default App;
