@@ -86,7 +86,7 @@ const Cards = props => {
                 url = `https://restcountries.com/v3.1/region/${region}`
             }
             else{
-                url = 'https://restcountries.com/v3.1/all'
+                url = 'https://restcountries.com/v3/all?fields=name,cca2,cca3,callingCodes'
             }
             const response = await fetch(url)
             const output = await response.json()
