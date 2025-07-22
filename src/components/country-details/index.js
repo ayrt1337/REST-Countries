@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
@@ -207,6 +207,7 @@ const CountryDetails = props => {
     const [countryDetails, setCountryDetails] = useState([])
     const [borders, setBorders] = useState([])
     const arr = []
+    const location = useLocation()
 
     var { country } = useParams()
 
@@ -246,7 +247,7 @@ const CountryDetails = props => {
             }
         }
         getData(country)
-    }, [])
+    }, [location.pathname])
 
     return(
         <>
